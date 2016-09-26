@@ -28,7 +28,9 @@ build/Release
 
 # Dependency directories
 node_modules
+react-15.3.2
 jspm_packages
+
 
 # Optional npm cache directory
 .npm
