@@ -1,0 +1,19 @@
+{
+  "name": "rkazak.github.io",
+  "version": "1.0.0",
+  "description": "Test Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rkazak/rkazak.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rkazak/rkazak.github.io/issues"
+  },
+  "homepage": "https://github.com/rkazak/rkazak.github.io#readme"
+}

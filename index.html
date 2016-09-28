@@ -2,20 +2,54 @@
 <html>
     <head>
         <title>This is a test</title>
-        <script src="build/react.js"></script>
-        <script src="build/react-dom.js"></script>
+        <style>
+            h3 {
+                font-family: fantasy;
+            }
+        </style>
     </head>
     <body>
-        <h1>This is a header</h1>
-        <h2>This is another header</h2>
+        <h1 style="background-color:green;">This is a header</h1>
+        <h2 style="color:green;">This is another real header</h2>
         <h3>What another header!</h3>
-        <div id="react-app"></div>
+        <div id="example"></div>
+        
         <script>
-            var contacts = [
-                {key: 1, name: "James T Kirk", email: "james@ussenterprize.boat"},
-                {key: 2, name: "Mr Spock", email: "spock@ussenterprize.boat"},
-                {key: 3, name: "Red Shirt 1"}
-            ]
+        ReactDOM.render(
+            <h1>Hello, world!</h1>,
+            document.getElementById('example')
+        );
+            
+        /*
+        // var myH1 = React.createElement('h1', {} );
+        
+        <script>
+            var ContactItem = React.createClass({
+                propTypes: {
+                    name: React.propTypes.string.isRequired,
+                    email: React.propTypes.string,
+                    description: React.propTypes.string
+                },
+                
+                render: function() {
+                    return (
+                    React.createElement('li', {className: 'Contact'},
+                        React.createElement('h2', {className: 'Contact-name'}, this.prop.name)
+                        React.createElement('h3', {className: 'Contact-email'},
+                                       this.prop.email)
+                        React.createElement('p', {className: 'Contact-description'},
+                        this.prop.description)
+                        )
+                    )
+                },
+            });
+            
+            var e1 = React.createElement(ContactItem {name: "James T Kirk", email: "James@uss.boat", description: "Captain"})
+            var e2 = React.createElement(ContactItem {name: "Mr Spock", email: "spock@uss.boat", description: "Chief Officer"})
+            var e3 = React.createElement(ContactItem {name: "Red Shirt", description: "Canon fodder"})
+ 
+            var contacts = [e1, e2, e3 ];
+            
             var listElements = contacts
             .filter(function(contact) {return contact.email})
             .map(function(contact) {
@@ -27,11 +61,16 @@
             
             var rootElement =
                 React.createElement('div', {},
-                React.createElement('h1',{}, "Contacts"),
-                React.createElement('ul',{}, listElements)
+                   React.createElement('h1',{}, "Contacts"),
+                   React.createElement('ul',{}, listElements)
             );
+            
             ReactDOM.render(rootElement,                            
                 document.getElementById('react-app'));
+            */
+                        
         </script>
+        <script src="build/react.js"></script>
+        <script src="build/react-dom.js"></script>
     </body>
 </html>
