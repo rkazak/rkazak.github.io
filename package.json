@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/rkazak/rkazak.github.io/issues"
   },
-  "homepage": "https://github.com/rkazak/rkazak.github.io#readme"
+  "homepage": "https://github.com/rkazak/rkazak.github.io#readme",
+  "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-cli": "^6.14.0",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "webpack": "^1.13.2"
+  }
 }
